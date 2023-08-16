@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,300;0,600;0,700;0,900;1,100&family=Roboto+Serif:opsz,wght@8..144,100;8..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Linkedin</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+            <div class="searche-box">
+                <img src="images/search.png" alt>
+                <input type="text" placeholder="search">
+            </div>
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a class="active-link" href="#"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="nav-right"></div>
+        <div class="online">
+            <img src="images/ceystroy.JPG" class="nav-profile-img" onclick="toggleMenu()">
+        </div>
+        <!----------------- profile-drop-down menu-------------------->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/ceystroy.JPG">
+                    <div>
+                        <h3>Ceyhun Ozyilmaz</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a class="profile-menu-link" href="#">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a class="profile-menu-link" href="#">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a class="profile-menu-link" href="#">
+                    <img src="images/help.png">
+                    <p>Help & Supports</p>
+                    <span>></span>
+                </a>
+                <a class="profile-menu-link" href="#">
+                    <img src="images/display.png">
+                    <p>Display & Accesblity</p>
+                    <span>></span>
+                </a>
+                <a class="profile-menu-link" href="#">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+       
+    </nav>
+
+<!---------------------- navbar-close ---------------------->
+
+    <div class="container">
+<!-------------------- left-sidebar ------------------------>
+        <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+            <img src="images/cover-pic.png" width="100%">
+            <div class="sidebar-profile-info">
+                <img src="images/ceystroy.JPG">
+                <h1>Ceyhun Özyılmaz</h1>
+                <h3>Web Developer</h3>
+                <ul>
+                    <li>Your profile views <span>52</span></li>
+                    <li>Your post views <span>700</span></li>
+                    <li>Your connections <span>178</span></li>
+                </ul>
+            </div>
+            <div class="sidebar-pofile-link">
+                <a href="#"><img src="images/items.png">My items</a>
+                <a href="#"><img src="images/premium.png">Try Premium</a>
+            </div>
+        </div>
+        <div class="sidebar-activity" id="sidebarActivity">
+            <h3>RECENT</h3>
+            <a href="#"><img src="images/recent.png">Web Development</a>
+            <a href="#"><img src="images/recent.png">User Interface</a>
+            <a href="#"><img src="images/recent.png">Online Learning</a>
+            <a href="#"><img src="images/recent.png">Learn Online</a>
+            <a href="#"><img src="images/recent.png">Code Better</a>
+            <a href="#"><img src="images/recent.png">Group Learning</a>
+            <h3>GROUPS</h3>
+            <a href="#"><img src="images/group.png">Web Design Group</a>
+            <a href="#"><img src="images/group.png">HTML & CSS Learners</a>
+            <a href="#"><img src="images/group.png">Python & JavaScript</a>
+            <a href="#"><img src="images/group.png">Learn Coding Online</a>
+            <h3>HASHTAG</h3>
+            <a href="#"><img src="images/hashtag.png">webdevelopment</a>
+            <a href="#"><img src="images/hashtag.png">userinterface</a>
+            <a href="#"><img src="images/hashtag.png">onlinelearning</a>
+            <div class="discover-more-link">
+                <a href="#">Discover more</a>
+            </div>
+        </div>
+        <p id="showMoreLink" onclick="toggleActivity" >Show more <b>+</b></p> 
+    </div>
+<!-------------------- main-content ------------------------>
+        <div class="main-content">
+
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/ceystroy.JPG">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images/photo.png">Photo</li>
+                    <li><img src="images/video.png">Video</li>
+                    <li><img src="images/event.png">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>top <img src="images/down-arrow.png"></span></p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png" alt="">
+                    <div>
+                        <h1>Clara Hutson</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>6 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa perferendis nesciunt asperiores sed esse dignissimos deleniti numquam facilis voluptatem. Provident aspernatur vel cupiditate qui et.</p>
+                <img src="images/post-image-1.png" width="100%">
+                    <div class="post-stats">
+                        <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Ceyhun Ozyilmaz and 90 others</span>
+                        </div>
+                        <div>
+                            <span>35 comments &middot; 40 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-activity">
+                    <div>
+                        <img class="post-activity-user-icon" src="images/ceystroy.JPG">
+                         <img class="post-activity-arrow-icon" src="images/down-arrow.png">
+                    </div>   
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>   
+                    <div  class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>  
+                    <div  class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>  
+                    <div  class="post-activity-link">
+                        <img src="images/send.png" alt="">
+                        <span>Send</span>
+                    </div>  
+                   </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-4.png" alt="">
+                <div>
+                    <h1>Jennifer Brown</h1>
+                    <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                    <small>9 hours ago</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa perferendis nesciunt asperiores sed esse dignissimos deleniti numquam facilis voluptatem. Provident aspernatur vel cupiditate qui et.</p>
+            <img src="images/post-image-2.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-users">Ceyhun Ozyilmaz and 90 others</span>
+                    </div>
+                    <div>
+                        <span>41 comments &middot; 60 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                <div>
+                    <img class="post-activity-user-icon" src="images/ceystroy.JPG">
+                     <img class="post-activity-arrow-icon" src="images/down-arrow.png">
+                </div>   
+                <div class="post-activity-link">
+                    <img src="images/like.png" alt="">
+                    <span>Like</span>
+                </div>   
+                <div  class="post-activity-link">
+                    <img src="images/comment.png" alt="">
+                    <span>Comment</span>
+                </div>  
+                <div  class="post-activity-link">
+                    <img src="images/share.png" alt="">
+                    <span>Share</span>
+                </div>  
+                <div  class="post-activity-link">
+                    <img src="images/send.png" alt="">
+                    <span>Send</span>
+                </div>  
+               </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-2.png" alt="">
+                <div>
+                    <h1>Mike Leigh</h1>
+                    <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                    <small>12 hours ago</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa perferendis nesciunt asperiores sed esse dignissimos deleniti numquam facilis voluptatem. Provident aspernatur vel cupiditate qui et.</p>
+            <img src="images/post-image-3.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-users">Ceyhun Ozyilmaz and 90 others</span>
+                    </div>
+                    <div>
+                        <span>26 comments &middot; 37 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                <div>
+                    <img class="post-activity-user-icon" src="images/ceystroy.JPG">
+                     <img class="post-activity-arrow-icon" src="images/down-arrow.png">
+                </div>   
+                <div class="post-activity-link">
+                    <img src="images/like.png" alt="">
+                    <span>Like</span>
+                </div>   
+                <div  class="post-activity-link">
+                    <img src="images/comment.png" alt="">
+                    <span>Comment</span>
+                </div>  
+                <div  class="post-activity-link">
+                    <img src="images/share.png" alt="">
+                    <span>Share</span>
+                </div>  
+                <div  class="post-activity-link">
+                    <img src="images/send.png" alt="">
+                    <span>Send</span>
+                </div>  
+               </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-5.png" alt="">
+                <div>
+                    <h1>Min-jun</h1>
+                    <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                    <small>12 hours ago</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa perferendis nesciunt asperiores sed esse dignissimos deleniti numquam facilis voluptatem. Provident aspernatur vel cupiditate qui et.</p>
+            <img src="images/post-image-4.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-users">Ceyhun Ozyilmaz and 90 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 35 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                <div>
+                    <img class="post-activity-user-icon" src="images/ceystroy.JPG">
+                     <img class="post-activity-arrow-icon" src="images/down-arrow.png">
+                </div>   
+                <div class="post-activity-link">
+                    <img src="images/like.png" alt="">
+                    <span>Like</span>
+                </div>   
+                <div  class="post-activity-link">
+                    <img src="images/comment.png" alt="">
+                    <span>Comment</span>
+                </div>  
+                <div  class="post-activity-link">
+                    <img src="images/share.png" alt="">
+                    <span>Share</span>
+                </div>  
+                <div  class="post-activity-link">
+                    <img src="images/send.png" alt="">
+                    <span>Send</span>
+                </div>  
+               </div>
+        </div>
+    </div>
+<!-------------------- right-sidebar ------------------------>
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img class="info-icon" src="images/more.png">
+                <h3>Trending News</h3>
+                <a href="#">High demand for skilled manpower</a>
+                <span>1d ago &middot ; 14,497 readers</span>
+
+                <a href="#">Careers growing horiontally top</a>
+                <span>14d ago &middot ; 20,967 readers</span>
+
+                <a href="#">Lees work visa for US, more for UK</a>
+                <span>25h ago &middot ; 64,497 readers</span>
+
+                <a href="#">More hiring = higher confidence?</a>
+                <span>12d ago &middot ; 19,397 readers</span>
+
+                <a href="#">Guatam Adani is the world's third richest</a>
+                <span>17h ago &middot ; 83,236 readers</span>
+
+                <a class="read-more-link" href="#">Read More</a>
+            </div>
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 priciples of web designing</p>
+                <div>
+                    <img src="images/ceystroy.JPG">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a class="ad-link" href="#">Learn More</a>
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accesblity</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="images/logo.png">
+                    <p>Linkedup &#169; 2023. All right reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+
+    let profileMenu = document.getElementById("profileMenu");
+
+    function toggleMenu() {
+        profileMenu.classList.toggle("open-menu")
+    }
+
+</script>
+
+
+<script>
+
+    let sideActivity = document.getElementById("sidebarActivity");
+    let moreLink = document.getElementById("showMoreLinky");
+   
+    function toggleActivity(){
+        sideActivity.classList.toggle("open-activity");
+    }
+
+</script>
+
+</body>
+</html>
